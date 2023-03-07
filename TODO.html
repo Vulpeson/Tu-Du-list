@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TODO.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title >Tu-du list</title>
+</head>
+<body>
+    <div>
+        <h1 id="tu-du-title" class="Titlu" >
+            Tu-du List
+        </h1>
+    </div>
+    <br>
+    <div  class="tu-du-new-task">
+       <button onclick="checkemall()"><i class="arrow down"></i><p></button>
+        <input id="input-new-task"  placeholder="Adauga un Task?" onkeydown="Create_list_item_input(this)" />
+    </div>
+    <ul class="tu-du-list" id="listid">    
+        <div class=" phantom tu-du-list-item">
+            <div class="tu-du-column1">
+                <input class="tu-du-input" type="checkbox" id="input1" onclick="green_my_list_item(this.id)"/>
+            </div>
+            <div class="tu-du-column2">
+                <h3>Task number</h2>
+            </div>
+            <div class="tu-du-column3">
+                <button class=" tu-du-buton-red" id="buton1" onclick="kill_my_task(this.id)"><b>X</b></button>
+            </div>
+        </div> 
+    </ul>
+        <div class="tu-du-list-tail ">   
+            <div class="tu-du-controller">
+                <button  id="buton-all"> ALL</button>
+            </div>
+            <div class="tu-du-controller">
+                <button  id="buton-active">ACTIVE</button>
+            </div>
+            <div class="tu-du-controller">
+                <button  id="buton-completed">COMPLETED</button>
+            </div>
+            <div class=".tu-du-btn tu-du-controller">
+                <button  id="buton-DnN">
+                        <i class="icon fa fa-moon-o night " id="" style="font-size: 16px"></i>
+                </button>
+            </div>
+            <div class="tu-du-controller">
+                <p id="tu-du-counter"> nimic </p>
+            </div>
+        </div> 
+    <script src="TODO.js"></script>
+</body>
+</html>
